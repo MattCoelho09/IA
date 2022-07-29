@@ -1,0 +1,50 @@
+{
+    "swagger":"2.0",
+    "basePath":"/ia/intelligence/api",
+    "paths":{
+        "/placas":{
+            "post":{
+                "responses":{
+                    "200":{
+                        "description":"OK"
+                    },
+                    "400":{
+                        "description":"Bad Request"
+                    },
+                    "500":{
+                        "description":"Internal Server Error"
+                    }
+                },
+                "operationId":"post_cam_url",
+                "parameters":[
+                    {
+                        "name":"file",
+                        "in":"formData",
+                        "type":"file",
+                        "required":true
+                    }
+                ],
+                "tags":[
+                    "AI Zootech "
+                ]
+            }
+        }
+    },
+    "info":{
+        "title":"Api Swagger - AI ZOOTECH",
+        "version":"1.0",
+        "description":"Modelo swagger flask-restx"
+    },
+    "produces":[
+        "application/json"
+    ],
+    "consumes":[
+        "application/json"
+    ],
+    "tags":[
+        {
+            "name":"AI Zootech ",
+            "description":"Mostra o resultado das cameras"
+        }
+    ]
+}
