@@ -168,6 +168,7 @@ def run(weights=ROOT / './yolov5/detection_placa.pt',#/home/francsicofilho/Docum
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         c1, c2 = (int(xyxy[0]), int(xyxy[1])), (int(xyxy[2]), int(xyxy[3]))
                         crop_img = im0[int(c1[1]):int(c2[1]), int(c1[0]):int(c2[0])]
+                        
                         # cv2.imshow("vai", crop_img)
                         # cv2.waitKey(0)
                         # id_name =  uuid.uuid4()
